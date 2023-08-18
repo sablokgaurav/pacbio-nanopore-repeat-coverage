@@ -29,7 +29,7 @@ def repeatlocatorLongRead(long_read_file, polyATGCstretch_type = None):
         long_read_dataframe = pd.DataFrame([(i,j)for i,j in zip(ids, sequences)]). \
                                           rename(columns = {0: "ids", 1: "sequences"})
         long_read_dataframe["repeat_locator"] = long_read_dataframe["sequences"]. \
-                         apply(lambda n: str(n)).apply(lambda n: re.findall(r"[aA]{3,5}", n))
+                         apply(lambda n: str(n)).apply(lambda n: re.findall(r"[aA]{3,}", n))
         repeats =  list(set([j for i in (long_read_dataframe["repeat_locator"].to_list()) for j in i]))
         long_read_dataframe["fraction_length"] = long_read_dataframe["sequences"].apply(lambda n: \
                                        [(n.find(repeats[i]),(n.find(repeats[i])+len(repeats[i]))) \
