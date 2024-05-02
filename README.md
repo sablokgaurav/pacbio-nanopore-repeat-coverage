@@ -12,7 +12,7 @@ repeatlocatorLongRead("/Users/gauravsablok/Desktop/CodeCheck/test_sample_sample1
 1	>seq2	ATATATATATAAGACGAGATAATAAAATTTTATATATATATAAAAA...	[AAAA, AAAAA]	[(41, 46), (23, 27)]	5.777778
 ```
 
-Gaurav Sablok \
+Gaurav \
 Academic Staff Member \
 Bioinformatics \
 Institute for Biochemistry and Biology \
